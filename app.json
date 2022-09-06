@@ -10,5 +10,10 @@
 		}
 	},
 	"repository": "https://github.com/restaurantt/mtproto-heroku",
-	"stack": "container"
+	"stack": "container",
+	"buildpacks":[
+		{
+			"url": "heroku/nodejs"
+		}
+	]
 }
