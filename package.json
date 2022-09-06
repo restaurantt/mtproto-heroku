@@ -1,0 +1,19 @@
+
+{
+	"name": "MTProto",
+	"description": "Deploy MTProto on Heroku.",
+	"keywords": ["MTProto"],
+	"env": {
+		"secret": {
+			"description": "MTProto secret,use 'head -c 16 /dev/urandom | xxd -ps' to generate",
+			"value": "bf50fd2bcc73ff6583703a7c8067eb8f"
+		}
+	},
+	"repository": "https://github.com/restaurantt/mtproto-heroku",
+	"stack": "container",
+	"buildpacks":[
+		{
+			"url": "heroku/nodejs"
+		}
+	]
+}
